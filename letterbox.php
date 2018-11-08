@@ -20,6 +20,9 @@
 <body>
   <link href = "registration.css" type = "text/css" rel = "stylesheet" />
 
+
+
+
   <div class="container">
 
     <?php
@@ -49,9 +52,7 @@
 
     <div class="container">
 
-      <div class="text-center">
-        <h3>--- Under Construction ---</h3>
-      </div>
+
 
       <div class="row">
 
@@ -67,7 +68,7 @@
               <label for="letterTextarea">Write down your critisism:</label>
               <textarea name="textletter" class="form-control" id="letterTextarea" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn btn-danger">Send Message!</button>
+            <button type="submit" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Are you sure?" >Send Message!</button>
           </form>
 
         </div>
@@ -82,7 +83,9 @@
             $text = $_POST['textletter'];
 
             $empfaenger = "mail@felixfelchner.tk";
+            //$betreff = "Die Mail-Funktion";
             $from = "From: Kummer Kasten <mail@felixfelchner.tk>";
+            //$text = "Hier lernt Ihr, wie man mit PHP Mails verschickt";
 
             mail($empfaenger, $betreff, $text, $from);
             echo '<div class="alert alert-dismissible alert-info">
@@ -110,6 +113,12 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script>
+  var $j = jQuery.noConflict();
+  $j(function () {
+    $j('[data-toggle="tooltip"]').tooltip()
+  })</script>
 </body>
 </html>
