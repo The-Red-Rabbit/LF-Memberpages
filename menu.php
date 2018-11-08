@@ -5,9 +5,11 @@
     <div class="card-body">
 <ul class="nav nav-pills flex-column">
   <li class="nav-item"><a class="nav-link active" href="index.php"><i class="fas fa-heart"></i> Home</a></li>
-  <li class="nav-item"><a class="nav-link " id="vote" href="vote.php"><i class="fas fa-bullhorn"></i> Vote</a></li>
+  <li class="nav-item"><a class="nav-link " id="vote" href="vote.php"><i class="fas fa-handshake"></i> Vote</a></li>
   <li class="nav-item"><a class="nav-link " id="phonebook" href="phonebook.php"><i class="fas fa-phone"></i> Phonebook</a></li>
   <li class="nav-item"><a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://slack.com/intl/de-de/"><i class="fab fa-slack"></i> LF Berlin Slack</a></li>
+  <li class="nav-item"><a class="nav-link " id="group" href="group.php"><i class="fas fa-people-carry"></i> Group random</a></li>
+  <li class="nav-item"><a class="nav-link " id="letterbox" href="letterbox.php"><i class="fas fa-user-astronaut"></i> Letterbox</a></li>
   <li class="nav-item"><a class="nav-link" href="logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
 </ul>
 </div>
