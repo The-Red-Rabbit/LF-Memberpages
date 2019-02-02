@@ -38,8 +38,8 @@
 
 
 
-  
-  $hash = '$2y$10$Y4WR6896cBmRlAwynuY.XuWB.dIhAYjxzirwkTApzIFsxiOCBrade';
+  //default password: love
+  $hash = '$2y$10$vWxUwkC958YYUVd/ZIMy7OfJrHabZasPipnU1TiNaXxpSRrEsD7K.';
 
   if (password_verify($passwort, $hash)) {
 
